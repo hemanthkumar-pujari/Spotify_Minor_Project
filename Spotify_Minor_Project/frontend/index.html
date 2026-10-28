@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Music Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Spotify Music Recommender</h1>
+    <p class="subtitle">Type a song name and get 5 songs with a similar sound.</p>
+
+    <label for="song-input">Search Song:</label>
+    <input type="text" id="song-input" list="song-suggestions" placeholder="e.g. Someone You Loved" autocomplete="off">
+    <datalist id="song-suggestions"></datalist>
+
+    <button id="recommend-btn">Recommend</button>
+
+    <p id="message" class="message"></p>
+
+    <h2 id="results-title" class="hidden">Recommended Songs:</h2>
+    <ol id="results"></ol>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
